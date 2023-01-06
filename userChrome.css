@@ -2,3 +2,9 @@
 #tabbrowser-tabs[haspinnedtabs]:not([positionpinnedtabs])
     > #tabbrowser-arrowscrollbox
     > .tabbrowser-tab[first-visible-unpinned-tab] { margin-inline-start: 0 !important; }
+
+/* add '[pdf]' next to links to PDF files */
+a[href$=".pdf"]:after {
+    font-size: smaller;
+    content: " [pdf]";
+}
